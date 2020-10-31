@@ -13,8 +13,8 @@ class App extends React.Component {
     return (
       <div>
         <Cards />
-        <Chart />
         <CountryPicker />
+        <Chart />
       </div>
     )
   }
