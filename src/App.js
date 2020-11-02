@@ -8,9 +8,9 @@ import {
 } from './components';
 import { fetchData } from './api';
 
-// import styling
+// import assets
 import styles from './App.module.css';
-
+import covidImage from './images/covid-19Image.png';
 
 class App extends React.Component {
 state = {
@@ -26,17 +26,20 @@ state = {
   }
 // set up a handle change function for countries
 handleCountryChange = async (country) => {
-   // fetch the data
+  // fetch the data
+  const fetchedData = await fetchData(country); 
    // set the state
+   this.setState({ data: fetchedData, country: country})
 }
 
   render() {
-    const { data } = this.state;
+    const { data, country } = this.state;
     return (
       <div className={styles.container}>
+        <img className={styles.image} src={covidImage} alt='COVID-19'/>
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <Chart />
+        <Chart data={data} country={country}/>
       </div>
     )
   }
