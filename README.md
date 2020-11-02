@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Covid-19 Global Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description
 
-## Available Scripts
+This simple data tracker application was designed to illustrate data on the treacherous virus pandemic that has been spreading in a global level since January of 2020.
+The application focuses on the overall **infected**, number of **recoveries**, and the number of **deaths** caused by the spread of the Covid-19 (SARS-CoV-2). It illustrates the data into a visual of numbers and an interactive chart for the global data on the **three** topics of information. 
+This information is updated daily as of November 2, 2020. 
 
-In the project directory, you can run:
+## Purpose
 
-### `npm start`
+The main goal of this project was focused around spreading information about the status of the virus that has greatly affected the lives of many in the world. 
+The spread of scientifically supported information is extremley important to not only be as accurate as possible with spreading knowledge, but also to challenge any form of missinformation that can hinder the progress that needs to be made in combatting this global crisis.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* [Description](#description)
+* [Purpose](#purpose)
+* [Technologies](#technologies)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
 
-### `npm test`
+## Technologies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The technologies used to create this application are as follows:
+- JavaScript
+- React.js
+- GitHub
+- John Hopkins University CSSE JSON API
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Setup:
+- run ```npm i && npm start```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application starts off at illustrating the data found on a global level. To change country, scroll down to 
+***CountryPicker*** 
+and choose a country from the dropdown menu.
+After choosing a country,
+the information seen illustrated will change, a short animation will occur to show the change in data. 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Credits
 
-### `npm run eject`
+* Idea was taken from this tutorial
+    - Build a COVID-19 Tracker Application - React JS Project (Hooks, Material UI, Charts js)
+    - **[JavaScriptMastery](https://www.youtube.com/watch?v=khJlrj3Y6Ls)**
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+* Data was obtained from 
+    - John Hopkins University CSSE JSON API
+    - **[Covid-19-API](https://covid19.mathdro.id/api)**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* For more detailed information related to Covid-19 please visit:
+    - John Hopkins University COVID-19 Dashboard by CSSE
+    - **[CSSE-Covid-19-Dashboard](https://coronavirus.jhu.edu/map.html)**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## License
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[GNU General Public License v3.0](./LICENSE.txt)
 
-## Learn More
+## Contributing
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Contributor Covenant](https://www.contributor-covenant.org/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+Adrian Romero 2020 Corona Virus Global Tracker
