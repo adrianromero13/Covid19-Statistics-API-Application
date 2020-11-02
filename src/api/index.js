@@ -20,9 +20,9 @@ export const fetchData = async (country) => {
       lastUpdate,
     }
   } catch (e) {
-    console.log(e);
+    return e;
   }
-}
+};
 
 // daily data
 export const fetchDailyData = async () => {
@@ -40,6 +40,7 @@ export const fetchDailyData = async () => {
     return e;
   }
 };
+// condensed
 
 export const fetchCountries = async () => {
   try {

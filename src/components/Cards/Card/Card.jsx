@@ -12,7 +12,7 @@ import cx from 'classnames';
 // styling
 import styles from './Card.module.css';
 
-const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitile }) => {
+const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitle }) => (
   <Grid item xs={12} md={3} component={Card} className={cx(styles.card, className)}>
     <CardContent>
       <Typography color='textSecondary' gutterBottom>
@@ -25,10 +25,10 @@ const CardComponent = ({ className, cardTitle, value, lastUpdate, cardSubtitile 
         {new Date(lastUpdate).toDateString()}
       </Typography>
       <Typography variant='body2' component='p'>
-        {cardSubtitile}
+        {cardSubtitle}
       </Typography>
     </CardContent>
   </Grid>
-};
+);
 
 export default CardComponent;
