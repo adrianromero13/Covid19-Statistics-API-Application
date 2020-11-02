@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { fetchDailyData } from '../../api';
 import { Line, Bar } from 'react-chartjs-2';
+import moment from 'moment';
 
 // styling
 import styles from './Chart.module.css';
@@ -17,12 +18,13 @@ const Chart = ({ data: { confirmed, deaths, recovered }, country }) => {
     fetchAPI();
   }, []);
 
+
   const lineChart = (
     dailyData.length
       ? (
         <Line
           data={{
-            labels: dailyData.map(({ date }) => date),
+            labels: dailyData.map(({ date }) => moment(date).format('MM.DD.YY')),
             datasets: [{
               data: dailyData.map(({ confirmed }) => confirmed),
               label: 'Infected',
